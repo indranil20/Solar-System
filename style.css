@@ -297,6 +297,7 @@ body{
 }
 .about{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
     text-align: left;
     padding: 50px 200px;
