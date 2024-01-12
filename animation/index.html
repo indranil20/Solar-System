@@ -1,0 +1,294 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solar System</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+        <script>
+            // sun 
+            function show(){
+                document.getElementById("star").style.display = "block";
+            }
+            function hide(){
+                document.getElementById("star").style.display = "none";
+            }
+            // mercury 
+            function marcshow(){
+                document.getElementById("marc").style.display = "block";
+            }
+            function marchide(){
+                document.getElementById("marc").style.display = "none";
+            }
+            // venus 
+            function venshow(){
+                document.getElementById("venus").style.display = "block";
+            }
+            function venhide(){
+                document.getElementById("venus").style.display = "none";
+            }
+            // earth 
+            function earshow(){
+                document.getElementById("earth").style.display = "block";
+            }
+            function earhide(){
+                document.getElementById("earth").style.display = "none";
+            }
+            // mars 
+            function marsshow(){
+                document.getElementById("mars").style.display = "block";
+            }
+            function marshide(){
+                document.getElementById("mars").style.display = "none";
+            }
+            // jupiter 
+            function jupshow(){
+                document.getElementById("jupiter").style.display = "block";
+            }
+            function juphide(){
+                document.getElementById("jupiter").style.display = "none";
+            }
+            // neptune 
+            function nepshow(){
+                document.getElementById("neptune").style.display = "block";
+            }
+            function nephide(){
+                document.getElementById("neptune").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="sun">
+            <img src="sun.png" alt="" width="80px" height="80px" onclick="show()">
+        </div>  
+        <div id="star" class="star">
+            <img class="starimg" src="sun.png" alt="">
+            <h1 class="star-name">THE SUN</h1>
+            <div class="about">
+                <div class="star-detail">
+                    <h3>GALAXY</h3>
+                    <p>MILKY WAY</p>
+                </div>
+                <div class="star-detail">
+                    <h3>DIAMETER</h3>
+                    <p>1.3927 MILLION KM</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AVG TEMPERATURE</h3>
+                    <p>5,973°C</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AGE</h3>
+                    <p>4.6 BILLION YEARS</p>
+                </div>
+                <div class="star-detail">
+                    <h3>MADE OF</h3>
+                    <p>HYDROGEN & HELIUM</p>
+                </div>
+            </div>
+            <img class="cancel" src="cancel.png" alt="" onclick="hide()">
+        </div>    
+        <div class="mercury-outline">
+            <div class="mercury">
+                <img src="mercury.png" alt="" height="18px" width="18px" onclick="marcshow()">
+            </div>
+        </div>
+        <div id="marc" class="star">
+            <img class="starimg" src="mercury.png" alt="">
+            <h1 class="star-name">THE MERCURY</h1>
+            <div class="about">
+                <div class="star-detail">
+                    <h3>GALAXY</h3>
+                    <p>MILKY WAY</p>
+                </div>
+                <div class="star-detail">
+                    <h3>DIAMETER</h3>
+                    <p>4,879.4 KM</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AVG TEMPERATURE</h3>
+                    <p>430°C</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AGE</h3>
+                    <p>4.5 BILLION YEARS</p>
+                </div>
+                <div class="star-detail">
+                    <h3>MADE OF</h3>
+                    <p>SILICATE ROCKS & IRONS</p>
+                </div>
+            </div>
+            <img class="cancel" src="cancel.png" alt="" onclick="marchide()">
+        </div>
+        <div class="venus-outline">
+            <div class="venus">
+                <img src="venus.png" alt="" height="30px" width="30px" onclick="venshow()">
+            </div>
+        </div>
+        <div id="venus" class="star">
+            <img class="starimg" src="venus.png" alt="">
+            <h1 class="star-name">THE VENUS</h1>
+            <div class="about">
+                <div class="star-detail">
+                    <h3>GALAXY</h3>
+                    <p>MILKY WAY</p>
+                </div>
+                <div class="star-detail">
+                    <h3>DIAMETER</h3>
+                    <p>12,104 KM</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AVG TEMPERATURE</h3>
+                    <p>460°C</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AGE</h3>
+                    <p>4.5 BILLION YEARS</p>
+                </div>
+                <div class="star-detail">
+                    <h3>MADE OF</h3>
+                    <p>ROCKY MANTLE & CENTRAL IRON CORE</p>
+                </div>
+            </div>
+            <img class="cancel" src="cancel.png" alt="" onclick="venhide()">
+        </div>
+        <div class="earth-outline">
+            <div class="earth">
+                <img src="earth.png" alt="" height="40px" width="55px" onclick="earshow()">
+                <div class="moon-outline">
+                    <div class="moon">
+                        <img src="moon.png" alt="" height="15px" width="20px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="earth" class="star">
+            <img class="starimg" src="earth.png" alt="" style="width: 540px; height: 400px;">
+            <h1 class="star-name">THE EARTH</h1>
+            <div class="about">
+                <div class="star-detail">
+                    <h3>GALAXY</h3>
+                    <p>MILKY WAY</p>
+                </div>
+                <div class="star-detail">
+                    <h3>DIAMETER</h3>
+                    <p>12,742 KM</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AVG TEMPERATURE</h3>
+                    <p>15°C</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AGE</h3>
+                    <p>4.5 BILLION YEARS</p>
+                </div>
+                <div class="star-detail">
+                    <h3>MADE OF</h3>
+                    <p>IRON, OXYGEN, SILICON, MAGNESIUM,<br> SULFUR, NICKEL, CALCIUM & ALINIMIUM</p>
+                </div>
+            </div>
+            <img class="cancel" src="cancel.png" alt="" onclick="earhide()">
+        </div>
+        <div class="mars-outline">
+            <div class="mars">
+                <img src="mars.png" alt="" height="32px" width="32px" onclick="marsshow()">
+            </div>
+        </div>
+        <div id="mars" class="star">
+            <img class="starimg" src="mars.png" alt="">
+            <h1 class="star-name">THE MARS</h1>
+            <div class="about">
+                <div class="star-detail">
+                    <h3>GALAXY</h3>
+                    <p>MILKY WAY</p>
+                </div>
+                <div class="star-detail">
+                    <h3>DIAMETER</h3>
+                    <p>6,779 KM</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AVG TEMPERATURE</h3>
+                    <p>20°C to -153°C</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AGE</h3>
+                    <p>4.5 BILLION YEARS</p>
+                </div>
+                <div class="star-detail">
+                    <h3>MADE OF</h3>
+                    <p>IRON, NICKEL & SULFUR</p>
+                </div>
+            </div>
+            <img class="cancel" src="cancel.png" alt="" onclick="marshide()">
+        </div>
+        <div class="jupiter-outline">
+            <div class="jupiter">
+                <img src="jupiter.png" alt="" height="70px" width="70px" onclick="jupshow()">
+            </div>
+        </div>
+        <div id="jupiter" class="star">
+            <img class="starimg" src="jupiter.png" alt="">
+            <h1 class="star-name">THE JUPITER</h1>
+            <div class="about">
+                <div class="star-detail">
+                    <h3>GALAXY</h3>
+                    <p>MILKY WAY</p>
+                </div>
+                <div class="star-detail">
+                    <h3>DIAMETER</h3>
+                    <p>139,820 KM</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AVG TEMPERATURE</h3>
+                    <p>-145°C</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AGE</h3>
+                    <p>4.5 BILLION YEARS</p>
+                </div>
+                <div class="star-detail">
+                    <h3>MADE OF</h3>
+                    <p>HYDROGEN & HELIUM</p>
+                </div>
+            </div>
+            <img class="cancel" src="cancel.png" alt="" onclick="juphide()">
+        </div>
+        <div class="neptune-outline">
+            <div class="neptune">
+                <img src="neptune.png" alt="" height="47px" width="47px" onclick="nepshow()">
+            </div>
+        </div>
+        <div id="neptune" class="star">
+            <img class="starimg" src="neptune.png" alt="">
+            <h1 class="star-name">THE NEPTUNE</h1>
+            <div class="about">
+                <div class="star-detail">
+                    <h3>GALAXY</h3>
+                    <p>MILKY WAY</p>
+                </div>
+                <div class="star-detail">
+                    <h3>DIAMETER</h3>
+                    <p>49,244 KM</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AVG TEMPERATURE</h3>
+                    <p>-214°C</p>
+                </div>
+                <div class="star-detail">
+                    <h3>AGE</h3>
+                    <p>4.5 BILLION YEARS</p>
+                </div>
+                <div class="star-detail">
+                    <h3>MADE OF</h3>
+                    <p>WATER, METHANE & AMMONIA</p>
+                </div>
+            </div>
+            <img class="cancel" src="cancel.png" alt="" onclick="nephide()">
+        </div>
+    </body>
+    </html>
